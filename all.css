@@ -63,9 +63,6 @@ i{
   margin-bottom: 5px;
   color: navy;
 }
-.lang p{
-  margin-bottom: 10px;
-}
 .experience{
   width: 50%;  
 }
@@ -113,6 +110,9 @@ i{
 }
 
 @media only screen and (max-width: 900px) {
+  .wrap{
+    width: 90%;
+  }
   .content{
     display: block;
   }
