@@ -1,0 +1,155 @@
+body{
+  background-color: rgb(218, 248, 255);
+}
+.wrap{
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.content{
+  padding: 3%;
+  border: solid 3px rgb(197, 197, 197);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.introduction{
+  width: 40%;
+}
+.introduction::after{
+  content: "";
+  position: absolute;
+  top: 5%;
+  bottom: 5%;
+  left: 45%;
+  transform: translateX(50%);
+  width: 2px;
+  background-color: rgb(197, 197, 197);
+}
+.self div{
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+h1{
+  font-size: 36px;
+  font-weight: bold; 
+  margin-right: 20px;
+}
+.self p{
+  padding-bottom: 5px;
+  border-bottom: solid 1px rgb(197, 197, 197);
+  margin-bottom: 10px;
+}
+h2{
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.skill{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.skill li{
+  text-align: center;
+  width: 50%;
+  margin-bottom: 20px;
+}
+i{
+  font-size: 80px;
+  margin-bottom: 5px;
+  color: navy;
+}
+.lang p{
+  margin-bottom: 10px;
+}
+.experience{
+  width: 50%;  
+}
+.timeline{
+  position: relative;
+}
+.timeline::after{
+  content:'';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-50%);
+  width: 6px;
+  background-color: navy;
+}
+.container{
+  position: relative;
+  margin-bottom: 20px;
+}
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: -17px;
+  background-color: white;
+  border: 4px solid navy;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.text{
+  width: 85%;
+  padding: 10px;
+  margin-left: 10%;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.text p{
+  margin-bottom: 5px;
+}
+.title{
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 900px) {
+  .content{
+    display: block;
+  }
+  .introduction{
+    border-bottom: solid 2px rgb(197, 197, 197);
+  }
+  .introduction, .experience{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .introduction::after{
+    display: none;
+  }
+  .skill{
+    flex-wrap: nowrap;
+  }
+  .timeline::after{    
+    left: 12px;
+  }
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: -5px;
+    background-color: white;
+    border: 4px solid navy;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .text{
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .skill{
+    flex-wrap: wrap;
+  }
+}
